@@ -1,5 +1,5 @@
 import re
-import sys
+
 
 def try_int(exp):
     if type(exp) == float:
