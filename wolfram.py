@@ -55,9 +55,10 @@ def get_power(exp):
 
 
 def get_brackets(exp):
-    bracket_match = re.search(r'\((.+)\)', exp)
+    bracket_match = re.search(r'\(([^\(\)]+)\)', exp)
     if bracket_match:
-        exp = exp.replace(bracket_match.group(), str(go_by_order(bracket_match.group(1))))
+        if
+            exp = exp.replace(bracket_match.group(), str(go_by_order(bracket_match.group(1))))
     return exp
 
 
